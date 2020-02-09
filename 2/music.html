@@ -1,9 +1,12 @@
 <html>
 <head>
   <title>    免费音乐播放器网页版    </title>
-  <style>
-    .am-topbar{display: none;}
-  </style>
+  <script>
+    window.onload = function(){
+    var _iframe = document.getElementById('iframe').contentWindow.document.getElementsByClassName("am-topbar");   //get iframe下的id
+    _iframe.style.display= "none";  //修改样式
+    }
+  </script>
 </head>
 <body>
 <table  width="100%" align="center" height="100%" border="0" cellpadding="0" cellspacing="0">
