@@ -1,11 +1,6 @@
 'use strict';
 
 /**
- *
- * 音乐搜索器 - JS 文件
- *
- * @since   1.6.2
- *
  */
 
 $(function() {
@@ -150,7 +145,7 @@ $(function() {
         var ajax = function ajax(input, filter, type, page) {
           $.ajax({
             type: 'POST',
-            url: getUrl(),
+            url: https://music.liuzhijin.cn,
             timeout: 30000,
             data: {
               input: input,
