@@ -105,6 +105,12 @@ body {
 	-webkit-transform:translateZ(0);
 	transform:translateZ(0)
 }
+@media screen and (max-device-height:578px) {
+	.ft-page {
+	width:auto;
+	height:auto;
+	}
+}
 .ft-page.actual {
 	z-index:100
 }
