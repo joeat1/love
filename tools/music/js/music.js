@@ -145,7 +145,7 @@ $(function() {
         var ajax = function ajax(input, filter, type, page) {
           $.ajax({
             type: 'POST',
-            url: https://music.liuzhijin.cn,
+            url: "https://music.liuzhijin.cn",
             timeout: 30000,
             data: {
               input: input,
