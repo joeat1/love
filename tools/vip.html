@@ -19,12 +19,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="https://cdn.yangju.vip/favicon.ico">
   <link href="https://cdn.yangju.vip/img/bootstrap.min.css" rel="stylesheet">
+  <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
   <title>    免费VIP播放器网页版    </title>
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
+         <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            食物
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" class="dropdown-header">水果</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">苹果</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">香蕉</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">梨</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">桃</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">蔬菜</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">芹菜</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">萝卜</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">茄子</a></li>
+            <li role="presentation" class="dropdown-header">主食</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">米饭</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">馒头</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">面条</a></li>
+          </ul>
+        </div> 
         <div class="form-group form-group-lg input-group input-group-lg">
            <input class="form-control" id="vipurl" type="text" value="" placeholder="请输入视频地址,如:https://www.iqiyi.com/v_19rw9hu9a8.html#curid=11685976300_2037b65b0553eea6940c8e54d96715cd">
               <span class="input-group-btn" id="url_submit">
