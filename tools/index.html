@@ -11,13 +11,22 @@
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<style>
 		h2, h4, p {
-		text-align: center;
+			text-align: center;
 		}
+		
+		td {
+			border: 1px solid transparent !important;
+		}
+		
+		.icos {
+			width: 32px;;
+		}
+		
 		.site-footer {
-		  position: relative;
-		  background-color: #2f7ddb;
-		  color: #fff;
-		  border-top: 30px solid #2f7ddb;
+			position: relative;
+			background-color: #2f7ddb;
+			color: #fff;
+			border-top: 30px solid #2f7ddb;
 		}
 	</style>
 	<script>
@@ -61,9 +70,8 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="col-md-6 offset-md-3">
-				  <form id="searchweb" action="https://www.baidu.com/s" target="_blank">
+			<div class="col-md-6 offset-md-3">
+				<form id="searchweb" action="https://www.baidu.com/s" target="_blank">
 					<div class="input-group input-group-lg">
 						<div class="input-group-prepend">
 							<select id="searchtype" class="input-group-text" style="font-size:medium" onchange="Searchtype();">
@@ -77,10 +85,107 @@
 							<button class="btn btn-primary" style="font-size:medium" type="submit">搜索</button>  
 						</div>
 					</div>
-				  </form>
+				</form>
+			</div>
+			<br>
+			
+			<div class="col-md-12">
+			</div>
+			<br>
+			<br>
+			
+			<div class="col-md-4">
+				<h4 class="card-title">在线工具</h4>
+				<div class="card">
+					<div class="card-body">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>
+										<img class="icos" src="https://translate.google.cn/favicon.ico">
+										<a href="https://translate.google.cn/" class="card-link">谷歌翻译</a>
+									</td>
+									<td>
+										<img class="icos" src="https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon-32x32_ca689c3.png">
+										<a href="https://fanyi.baidu.com/" class="card-link">百度翻译</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-
-				<br>
+			</div>
+			<div class="col-md-4">
+				<h4 class="card-title">影音娱乐</h4>
+				<div class="card">
+					<div class="card-body">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>
+										<img class="icos" src="https://s1.music.126.net/style/favicon.ico">
+										<a href="https://music.163.com/" class="card-link">网易云</a>
+									</td>
+									<td>
+										<img class="icos" src="">
+										<a href="https://www.bilibili.com/" class="card-link">哔哩哔哩</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img class="icos" src="https://www.mgtv.com/favicon.ico">
+										<a href="https://www.mgtv.com/" class="card-link">芒果TV</a>
+									</td>
+									<td>
+										<img class="icos" src="https://www.douban.com/favicon.ico">
+										<a href="https://www.douban.com/" class="card-link">豆瓣</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4 class="card-title">资源</h4>
+				<div class="card">
+					<div class="card-body">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>
+										<img class="icos" src="https://i.loli.net/2018/08/04/5b65b28a65aae.png">
+										<a href="https://www.cupfox.com/" class="card-link">茶杯狐</a>
+									</td>
+									<td>
+										<img class="icos" src="https://www.musictool.top/favicon.ico">
+										<a href="https://www.musictool.top/" class="card-link">免费音乐搜索</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img class="icos" src="https://github.githubassets.com/favicons/favicon.png">
+										<a href="https://github.com/" class="card-link">Github</a>
+									</td>
+									<td>
+										<img class="icos" src="https://cdn.portablesoft.org/favicon.ico">
+										<a href="https://www.portablesoft.org/" class="card-link">便携软件下载</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
 				<h2> 工具说明 </h2>
 				<p>主要的工具支持皆来源于外部网站，此处仅提供了简单使用接口，不喜勿喷。</p>
 			</div>
