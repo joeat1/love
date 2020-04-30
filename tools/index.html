@@ -44,7 +44,7 @@
 		<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		<ul class="navbar-nav">
+		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
 				<a class="nav-link" href="vip.html">免费视频解析</a>
 			</li>
@@ -62,19 +62,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="col-md-8 offset-md-2">
+				<div class="col-md-6 offset-md-3">
 				  <form id="searchweb" action="https://www.baidu.com/s" target="_blank">
-					<div class="input-group">
+					<div class="input-group input-group-lg">
 						<div class="input-group-prepend">
-							<select id="searchtype"  onchange="Searchtype();">
-								<option value="baidu" selected><span class="input-group-text">百度</span></option>
-								<option value="bing"><span class="input-group-text">必应</span></option>
-								<option value="google"><span class="input-group-text">谷歌</span></option>
+							<select id="searchtype" class="input-group-text" style="font-size:medium" onchange="Searchtype();">
+								<option value="baidu" selected>百度</option>
+								<option value="bing">必应</option>
+								<option value="google">谷歌</option>
 							</select>
 						</div>
 						<input type="text" class="form-control" name="wd" id="s_str" maxlength="100" type="text" autocomplete="off">
 						<div class="input-group-append">
-							<button class="btn btn-primary" type="submit">搜索</button>  
+							<button class="btn btn-primary" style="font-size:medium" type="submit">搜索</button>  
 						</div>
 					</div>
 				  </form>
@@ -87,6 +87,7 @@
 		</div>
 	</div>
 	
+	<br>
 	<footer class="site-footer"> 
 		<div class="container"> 
 			<div class="row footer-top"> 
