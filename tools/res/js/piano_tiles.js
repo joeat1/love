@@ -22,7 +22,7 @@ $(function () {
 			this.is_fail = false;
 			this.rows = 4;
 			this.cols = 4;
-			this.speed = 1;
+			this.speed = 2;
 			this.stepy = Math.floor(this.box.h / this.rows);
 			this.stepx = Math.floor(this.box.w / this.cols);
 			this.initial();
@@ -150,7 +150,7 @@ $(function () {
 				// that.speed = Math.floor(that.model[0].index / 5) >= 1 ? Math.floor(that.model[0].index / 5) : that.speed;
 				if (!that.is_fail) {
 					result = Math.floor(Math.log(that.model[0].index) / Math.log(1.3));
-					that.speed = result > 1 ? result : 1;
+					that.speed = result > 1 ? result : 2;
 					console.log(that.speed);
 				} else {
 					clearInterval(timer);
