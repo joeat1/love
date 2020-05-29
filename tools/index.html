@@ -57,6 +57,9 @@
 			} else if (type=="github"){
 				document.getElementById("searchweb").action="https://github.com/search";
 				document.getElementById("s_str").name="q"
+			} else if (type=="weixin"){
+				document.getElementById("searchweb").action="https://weixin.sogou.com/";
+				document.getElementById("s_str").name="query"
 			}
 		}
 	</script>
@@ -104,6 +107,7 @@
 								<option value="bing">必应</option>
 								<option value="google">谷歌</option>
 								<option value="github">github</option>
+								<option value="weixin">微信</option>
 							</select>
 						</div>
 						<input type="text" class="form-control" name="wd" id="s_str" maxlength="100" type="text" autocomplete="off">
@@ -175,6 +179,17 @@
 										<img class="icos" src="https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon-32x32_ca689c3.png">
 										<a href="https://fanyi.baidu.com/" class="card-link">百度翻译</a>
 									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="https://www.tianyancha.com/" class="card-link">天眼查</a>
+									</td>
+									<td>
+										<a href="https://www.kuaidi100.com/" class="card-link"> 快递100 </a>
+									</td>
+								</tr>
+								<tr>
+									<a href="http://image.baidu.com/?fr=shitu" class="card-link">百度识图</a>
 								</tr>
 							</tbody>
 						</table>
