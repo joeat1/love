@@ -43,6 +43,21 @@
 		}
 	</style>
 	<script>
+		 var  generateHideElement = function (name, value) {
+		 	var tempInput = document.getElementById("type_str");
+		 	if(tempInput)
+		 	{
+		 		tempInput.name = name;
+		 		tempInput.value = value;
+		 	} else{
+		 		var tempInput = document.createElement("input");
+                tempInput.type = "hidden";
+                tempInput.id = "type_str";
+                tempInput.name = name;
+                tempInput.value = value;
+                return tempInput;
+		 	}
+        }
 		function Searchtype(){
 			var type=document.getElementById("searchtype").options[document.getElementById("searchtype").selectedIndex].value;
 			if (type=="baidu"){
@@ -58,8 +73,15 @@
 				document.getElementById("searchweb").action="https://github.com/search";
 				document.getElementById("s_str").name="q"
 			} else if (type=="weixin"){
-				document.getElementById("searchweb").action="https://weixin.sogou.com/weixin?type=2";
+				document.getElementById("searchweb").action="https://weixin.sogou.com/weixin";
 				document.getElementById("s_str").name="query"
+                var tempInput = generateHideElement("type", 2)
+                document.getElementById("searchweb").appendChild(tempInput);
+			} else if (type=="zhihu"){
+				document.getElementById("searchweb").action="https://www.zhihu.com/search";
+				document.getElementById("s_str").name="q"
+				var tempInput = generateHideElement("type", "content")
+                document.getElementById("searchweb").appendChild(tempInput);
 			}
 		}
 	</script>
@@ -86,9 +108,6 @@
 				<a class="nav-link" href="games/BBTan-Online.html"> BBTan-Online </a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="games/Magic-Tiles-3-Online.html"> Magic-Tiles-3-Online </a>
-			</li>
-			<li class="nav-item">
 				<a class="nav-link" href="https://open985.com/"> 极客搜索 </a>
 			</li>
 		</ul>
@@ -108,9 +127,10 @@
 								<option value="google">谷歌</option>
 								<option value="github">github</option>
 								<option value="weixin">微信</option>
+								<option value="zhihu">知乎</option>
 							</select>
 						</div>
-						<input type="text" class="form-control" name="wd" id="s_str" maxlength="100" type="text" autocomplete="off">
+						<input type="text" class="form-control" name="wd" id="s_str" maxlength="100" autocomplete="off">
 						<div class="input-group-append">
 							<button class="btn btn-primary" style="font-size:medium" type="submit">搜索</button>  
 						</div>
@@ -190,6 +210,12 @@
 										<a href="http://image.baidu.com/?fr=shitu" class="card-link">百度识图</a>
 									</td>
 								</tr>
+								<tr>
+									<td>
+										<img class="icos" src="https://www.processon.com/favicon.ico">
+										<a href="https://www.processon.com/" class="card-link">ProcessOn</a>
+									</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -236,6 +262,17 @@
 										<img class="icos" src="https://file.ipadown.com/tophub/assets/images/favicon/favicon-32x32.png">
 										<a href="https://tophub.today/" class="card-link">今日热榜</a>
 									</td>
+
+									<td>
+										<img class="icos" src="https://www.hanjutv.com/pc/images/favicon.ico">
+										<a href="https://www.hanjutv.com/" class="card-link">韩剧TV</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img class="icos" src="https://pa.tedcdn.com/favicon.ico">
+										<a href="https://www.ted.com/"  class="card-link">TED</a>
+									</td>
 								</tr>
 							</tbody>
 						</table>
@@ -248,6 +285,17 @@
 					<div class="card-body">
 						<table class="table">
 							<tbody>
+								<tr>
+									<td>
+										<img class="icos" src="http://sci.xueshuwu.cn/favicon.ico">
+										<a href="http://sci.xueshuwu.cn/" class="card-link">谷歌学术镜像</a>
+										<!-- <img class="icos" src="https://ac.scmor.com/res/favicon.ico">
+										<a href="https://ac.scmor.com/" class="card-link">谷歌学术镜像</a> -->
+									</td>
+									<td>
+										
+									</td>
+								</tr>
 								<tr>
 									<td>
 										<img class="icos" src="https://www.pexels.com/favicon.ico">
@@ -274,21 +322,21 @@
 										<a href="https://www.portablesoft.org/" class="card-link">便携软件下载</a>
 									</td>
 									<td>
-										<img class="icos" src="http://www.ypppt.com/style/search-ico.png">
-										<a href="http://www.ypppt.com/" class="card-link">PPT免费模板</a>
+										<img class="icos" src="http://static.yingyonghui.com/resource/www/static/images/favicon.ico">
+										<a href="http://www.appchina.com/" class="card-link">应用汇</a>
 									</td>
-									
 								</tr>
 								<tr>
 									<td>
-										<img class="icos" src="https://ac.scmor.com/res/favicon.ico">
-										<a href="https://ac.scmor.com/" class="card-link">谷歌学术镜像</a>
+										<img class="icos" src="http://www.ypppt.com/style/search-ico.png">
+										<a href="http://www.ypppt.com/" class="card-link">PPT免费模板</a>
 									</td>
 									<td>
 										<img class="icos" src="https://www.jiumodiary.com/images/favicon.png">
 										<a href="https://www.jiumodiary.com/" class="card-link">文档书籍搜索</a>
 									</td>
 								</tr>
+								
 							</tbody>
 						</table>
 					</div>
