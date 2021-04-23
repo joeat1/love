@@ -10,14 +10,14 @@
 	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script>
-            var _hmt = _hmt || [];
-            (function() {
-                 var hm = document.createElement("script");
-                 hm.src = "https://hm.baidu.com/hm.js?0c80cab2342e18b39d22c77289abc5f7";
-                 var s = document.getElementsByTagName("script")[0]; 
-                 s.parentNode.insertBefore(hm, s);
-            })();
-        </script>
+		var _hmt = _hmt || [];
+		(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?0c80cab2342e18b39d22c77289abc5f7";
+				var s = document.getElementsByTagName("script")[0]; 
+				s.parentNode.insertBefore(hm, s);
+		})();
+    </script>
 	<style>
 		h2, h4, p {
 			text-align: center;
@@ -97,6 +97,9 @@
 			}
 		}
 	</script>
+	<script>
+		$(function () { $("[data-toggle='tooltip']").tooltip(); });
+	</script>
 </head>
 
 <body>
@@ -165,7 +168,8 @@
 								<tr>
 									<td>
 										<img class="icos" src="http://www.bfkdim.com/static/imgs/favicon.ico">
-										<a href="http://www.bfkdim.com/" class="card-link">临时手机号</a>
+										<a href="http://www.bfkdim.com/" class="card-link" data-toggle="tooltip" data-placement="top"
+										 title="保护隐私的基础上注册不重要的网站">临时手机号</a>
 									</td>
 									<td>
 										<img class="icos" src="res/favicon.ico">
@@ -210,8 +214,8 @@
 										<a href="https://translate.google.cn/" class="card-link">谷歌翻译</a>
 									</td>
 									<td>
-										<img class="icos" src="https://fanyi-cdn.cdn.bcebos.com/static/translation/img/favicon/favicon-32x32_ca689c3.png">
-										<a href="https://fanyi.baidu.com/" class="card-link">百度翻译</a>
+										<img class="icos" src="https://f.109876543210.com/logo_zhcn.png">
+										<a href="https://zhcn.109876543210.com/" class="card-link">图片转文字</a>
 									</td>
 								</tr>
 								<tr>
@@ -271,7 +275,7 @@
 										<a href="https://www.ted.com/"  class="card-link">TED</a>
 									</td>
 									<td>
-										<img class="icos" src="http://oeasy.org/theme/images/logos/oeasy.png">
+										<img class="icos" src="res/img/oeasy.png">
 										<a href="http://oeasy.org/" class="card-link">Oeasy视频</a>
 									</td>
 								</tr>
@@ -348,7 +352,7 @@
 										<a href="https://www.58pic.com/" class="card-link">千图网</a>
 									</td>
 									<td>
-										<img class="icos" src="https://">
+										<img class="icos" src="https://www.lanzou.com/favicon.ico">
 										<a href="https://www.lanzou.com/" class="card-link">蓝奏云</a>
 									</td>
 								</tr>
@@ -361,7 +365,7 @@
 										<a href="https://www.crx4chrome.com/" class="card-link">谷歌插件</a>
 									</td>
 									<td>
-										<img class="icos" src="https://greasyfork.org/assets/blacklogo16-bc64b9f7afdc9be4cbfa58bdd5fc2e5c098ad4bca3ad513a27b15602083fd5bc.png">
+										<img class="icos" src="res/img/greasyfork.png">
 										<a href="https://greasyfork.org/zh-CN/scripts" class="card-link">油猴脚本</a>
 									</td>
 								</tr>
@@ -391,10 +395,7 @@
 										<img class="icos" src="https://www.jiumodiary.com/images/favicon.png">
 										<a href="https://www.jiumodiary.com/" class="card-link">文档搜索</a>
 									</td>
-									<td>
-										<img class="icos" src="https://f.109876543210.com/logo_zhcn.png">
-										<a href="https://zhcn.109876543210.com/" class="card-link">图片转文字</a>
-									</td>
+									
 								</tr>
 							</tbody>
 						</table>
