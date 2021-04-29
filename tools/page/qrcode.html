@@ -1,8 +1,8 @@
 <html>
 <head>
     <title>二维码生成</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link rel="stylesheet" href="../res/css/bootstrap.min.css">
     <script type="text/javascript" src="../res/js/jquery.min.js"></script>
     <script type="text/javascript" src="../res/js/qrcode.min.js"></script>
@@ -43,8 +43,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <input id="text" type="text" value="joeat1" style="width:80%" />
-                <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+                <input type="text" class="form-control" value="joeat1" id="qr_text" maxlength="100" autocomplete="off">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" style="font-size:medium" id="qr_submit">生成</button>  
+                </div>
+                <div id="qrcode" style="margin-top:15px;"></div>
             </div>
         </div>
     </div>
@@ -55,10 +58,10 @@
         });
 
         function makeCode () {		
-            var elText = document.getElementById("text");
+            var elText = document.getElementById("qr_text");
             
             if (!elText.value) {
-                alert("Input a text");
+                alert("请输入文字");
                 elText.focus();
                 return;
             }
@@ -68,8 +71,11 @@
 
         makeCode();
 
-        $("#text").
-            on("blur", function () {
+        $('#qr_submit').click(function(){
+            makeCode();
+        })
+        $("#qr_text").
+            on("blur", function () { //离开输入框
                 makeCode();
             }).
             on("keydown", function (e) {
