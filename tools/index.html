@@ -94,6 +94,9 @@
 				document.getElementById("s_str").name="q"
 				var tempInput = generateHideElement("type", "content")
                 document.getElementById("searchweb").appendChild(tempInput);
+			} else if (type=="ip"){
+				document.getElementById("searchweb").action="https://www.atool99.com/host.php";
+				document.getElementById("s_str").name="q"
 			}
 		}
 	</script>
@@ -143,6 +146,7 @@
 								<option value="github">github</option>
 								<option value="weixin">微信</option>
 								<option value="zhihu">知乎</option>
+								<option value="ip">IP查询</option>
 							</select>
 						</div>
 						<input type="text" class="form-control" name="wd" id="s_str" maxlength="100" autocomplete="off">

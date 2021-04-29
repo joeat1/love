@@ -45,7 +45,7 @@
             <div class="col-md-8 offset-md-2">
                 <input type="text" class="form-control" value="joeat1" id="qr_text" maxlength="100" autocomplete="off">
                 <div class="input-group-append">
-                    <button class="btn btn-primary" style="font-size:medium" id="qr_submit">生成</button>  
+                    <button class="btn btn-primary" style="font-size:medium" onclick="makeCode()">生成</button>  
                 </div>
                 <div id="qrcode" style="margin-top:15px;"></div>
             </div>
@@ -71,9 +71,6 @@
 
         makeCode();
 
-        $('#qr_submit').click(function(){
-            makeCode();
-        })
         $("#qr_text").
             on("blur", function () { //离开输入框
                 makeCode();
